@@ -1,0 +1,47 @@
+﻿<Window x:Class="WPF_Cnvrt2Pdf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Cnvrt2Pdf"
+        mc:Ignorable="d"
+        Title="Cnvrt2Pdf" Height="450" Width="800" ResizeMode="CanMinimize">
+    <Grid>
+        <GroupBox Header="Choose File Type" Margin="10,10,582,292">
+            <Grid>
+                <RadioButton Name="rdioImg" Content="Images" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
+                <RadioButton Name="rdioPdf" Content="PDFs" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+                <RadioButton Name="rdioTxt" Content="Text Files" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top"/>
+            </Grid>
+
+        </GroupBox>
+        <GroupBox Header="Choose Quality" Margin="10,147,582,170">
+            <Grid>
+                <RadioButton Name="rdioHigh" Content="Highest Quality" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" IsChecked="True"/>
+                <RadioButton Name="rdioLow" Content="Lowest Quality" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+            </Grid>
+
+        </GroupBox>
+        <GroupBox Header="Options" Margin="10,269,582,10">
+            <Grid>
+                <Label Content="File Name" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.421,-0.575"/>
+                <TextBox Name="fileNameTxt" HorizontalAlignment="Left" Margin="98,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73"/>
+                <Label Content="Directory" HorizontalAlignment="Left" Margin="10,46,0,0" VerticalAlignment="Top"/>
+                <Button Content="Choose" HorizontalAlignment="Left" Margin="98,49,0,0" VerticalAlignment="Top" Width="73" Click="Button_Click"/>
+                <Button Content="Load Files" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click_1"/>
+                <Button Content="Save PDF" HorizontalAlignment="Left" Margin="93,85,0,0" VerticalAlignment="Top" Width="78" Click="Button_Click_4"/>
+            </Grid>
+        </GroupBox>
+        <Image Name="ImageViewer" Stretch="Uniform" Margin="261,21,155,21">
+            <Image.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Image.OpacityMask>
+        </Image>
+        <Button Content="&gt;&gt;" HorizontalAlignment="Left" Margin="686,126,0,0" VerticalAlignment="Top" Height="80" Width="62" Click="Button_Click_2"/>
+        <Button Content="&lt;&lt;" HorizontalAlignment="Left" Margin="686,224,0,0" VerticalAlignment="Top" Height="80" Width="62" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>
