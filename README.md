@@ -20,4 +20,4 @@ Not implemented here, free for suggestions by you!
 ## Special thanks to:  
 [@ookii-dialogs](https://www.github.com/ookii-dialogs) , without their library this project wouldn't be a thing!  
 [@dotnet](https://www.github.com/dotnet) , for providing a glorious and amazing code base to have efficient programs, as always  
-[@AhmedAlaa411](https://www.github.com/AhmedAlaa411) , ((Elfarsy)) , ((Osama Samir)), ((Ahmed Eldreiny)), ((Wafik)), ((Elnaghy)), and all the rest of my freinds who always support me.  
+[@AhmedAlaa411](https://www.github.com/AhmedAlaa411) , ((Elfarsy)) , ((Osama Samir)), [a7mdmo74](https://github.com/a7mdmo74), ((Wafik)), ((Elnaghy)), and all the rest of my freinds who always support me.  
